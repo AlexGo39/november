@@ -1,0 +1,46 @@
+.article-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include r($mobile) {
+    align-items: flex-start;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 101px;
+    height: 101px;
+    padding: 18px;
+    background-color: $c-green;
+    border-radius: $radius20;
+
+    @include r($mobile) {
+      width: 64px;
+      height: 64px;
+      padding: 10px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: $c-green;
+  }
+
+  &__text {
+    color: rgba($c-green-dark, 0.5);
+  }
+}

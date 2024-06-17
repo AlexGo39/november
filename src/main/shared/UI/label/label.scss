@@ -1,0 +1,28 @@
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 13px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: $c-white;
+  border-radius: $radius20;
+  background-color: $c-purple;
+
+  &--invert {
+    color: $c-purple-dark;
+    background-color: $c-purple-white;
+  }
+
+  &--gradient {
+    background: $c-gradient;
+  }
+
+  &--small {
+    @include r($mobile) {
+      padding: 4px 11px;
+      font-size: 12px;
+    }
+  }
+}

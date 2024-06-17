@@ -1,0 +1,21 @@
+.article-partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 193px;
+    border-radius: $radius20;
+    overflow: hidden;
+    background-color: $c-gray;
+  }
+}

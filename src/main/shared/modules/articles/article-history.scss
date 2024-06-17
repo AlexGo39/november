@@ -1,0 +1,59 @@
+.article-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 42px;
+  direction: initial;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--reverse {
+    direction: rtl;
+    .article-history__info {
+      direction: initial;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: $c-purple-dark;
+  }
+
+  &__text {
+
+  }
+
+  &__picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  &__img {
+
+    img {
+      @include cover
+    }
+  }
+
+  &__caption {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+    color: $c-purple-light;
+  }
+}

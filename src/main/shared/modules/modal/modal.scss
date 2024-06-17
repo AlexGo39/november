@@ -1,0 +1,50 @@
+.modal {
+  position: relative;
+  display: flex;
+  padding: 40px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1050px;
+  border-radius: 15px;
+
+  @include r($mobile) {
+    padding: 94px 20px 52px;
+    border-radius: 0;
+  }
+
+  &--no-close {
+    .is-close-btn {
+      display: none;
+    }
+  }
+
+  &--line {
+    flex-direction: row;
+    gap: 37px;
+
+    @include r($mobile) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__icon {
+    height: 34px;
+  }
+}

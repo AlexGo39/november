@@ -1,0 +1,48 @@
+.picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &__img {
+    @include cover();
+  }
+
+  &--map {
+    min-width: 887px;
+    flex-shrink: 0;
+
+    @include r($mobile) {
+      margin-left: -250px;
+      width: 887px;
+    }
+  }
+
+  &__airplane {
+    position: absolute;
+    bottom: 0;
+    right: -55px;
+
+    @include r($mobile) {
+      width: 183px;
+      right: initial;
+      left: 38%;
+      bottom: -90px;
+      transform: translateX(-50%) scale(-1, 1);
+    }
+  }
+
+  &--swiper {
+    height: auto;
+    max-height: 268px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &--thumbs {
+    max-height: 96px;
+  }
+}

@@ -1,0 +1,32 @@
+.main-title {
+  font-family: $font-accent;
+  font-size: $text-title-big;
+  font-weight: 700;
+  line-height: 76.8px;
+  text-transform: uppercase;
+  color: $c-white;
+
+  @include r($mobile) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &--dark {
+    color: $c-purple-dark;
+  }
+
+  &--purple-light {
+    color: $c-purple-light;
+  }
+
+  &--pages {
+    @include r($mobile) {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+
+  &--auto {
+    text-align: center;
+  }
+}

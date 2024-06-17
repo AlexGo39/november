@@ -1,0 +1,248 @@
+@use "sass:math";
+
+//Адаптивная
+$mobile: 1200;
+
+//Цвета
+$c-white: #FFFFFF;
+$c-light: #F5F5FF;
+$c-gray: #F5F5F5;
+$c-gray-dark: #D7D7D7;
+$c-gray-black: #7F7F7F;
+$c-purple: #4C2BEF;
+$c-purple-dark: #07021A;
+$c-purple-light: #43364B;
+$c-purple-white: #EAE7F8;
+$c-green: #5DC482;
+$c-green-accent: #5AC38A;
+$c-green-dark: #030F01;
+$c-lavender: #D2C7FF;
+$c-brown: #654805;
+$c-brown-light: #826A33;
+$c-brown-white: #D1BD93;
+$c-footer: #05001A;
+$c-blue: #020CFC;
+
+$c-gradient: linear-gradient(102.14deg, #60C579 3%, #54C198 26.5%, #41BACA 58.5%, #438CBE 78.5%, #4742AC 100%);
+$c-gradient-second: linear-gradient(102.14deg, #FFD559 0%, #FFCE55 25.5%, #FF993B 52.5%, #FF3F9F 100%);
+$c-gradient-backdrop: linear-gradient(262.37deg, rgba(25, 20, 45, 0) 19.24%, rgba(25, 20, 45, 0.441) 72.15%);
+
+//Радиусы
+$radius10: 10px;
+$radius20: 20px;
+$radius30: 30px;
+$radius40: 40px;
+$radius50: 50px;
+$radius60: 60px;
+
+//Текст
+$text-main: 16px;
+$text-small: 14px;
+$text-accent: 18px;
+$text-subtitle: 24px;
+$text-title: 50px;
+$text-title-big: 64px;
+$text-title-small: 32px;
+
+// Шрифты
+$font-main: 'Circe', sans-serif;
+$font-accent: 'Tactic Sans Extended', sans-serif;
+
+// Функции
+@mixin scroll() {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-face-color: $color_1_3;
+  scrollbar-track-color: transparent;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color_1_3
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent
+  }
+}
+
+@mixin before() {
+  position: relative;
+  z-index: 1;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+@mixin horizon($width) {
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: block !important;
+  & > * {
+    display: inline-block !important;
+    width: $width !important;
+    margin-right: .5rem;
+    white-space: initial;
+    vertical-align: top;
+    margin-bottom: 1rem !important
+  }
+}
+
+@mixin blur($radius,$width,$color) {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    background: $color;
+    position: absolute;
+    top: - calc(($width - 100%) /2 );
+    left: - calc(($width - 100%) /2 );
+    width: $width;
+    height: $width;
+    z-index: -1;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+    border-radius: $radius;
+  }
+}
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content
+  }
+}
+
+@mixin backdrop() {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $c-gradient-backdrop;
+    display: flex;
+    z-index: 0;
+  }
+}
+
+@mixin pt($size) {
+  padding-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .pt-#{$i} {
+    @include pt($i);
+  }
+}
+
+@mixin ptm($size) {
+  @include r($mobile) {
+    padding-top: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 1 through 200 {
+  .ptm-#{$i} {
+    @include ptm($i);
+  }
+}
+
+@mixin pb($size) {
+  padding-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .pb-#{$i} {
+    @include pb($i);
+  }
+}
+
+@mixin pbm($size) {
+  @include r($mobile) {
+    padding-bottom: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 1 through 200 {
+  .pbm-#{$i} {
+    @include pbm($i);
+  }
+}
+
+@mixin mt($size) {
+  //margin-top: $size + px;
+  margin-top: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .mt-#{$i} {
+    @include mt($i);
+  }
+}
+
+@mixin mtm($size) {
+  //margin-top: $size + px;
+  @include r($mobile) {
+    margin-top: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 1 through 200 {
+  .mtm-#{$i} {
+    @include mtm($i);
+  }
+}
+
+@mixin mb($size) {
+  //margin-bottom: $size + px;
+  margin-bottom: math.div($size, 16) * 1rem;
+}
+
+@for $i from 1 through 200 {
+  .mb-#{$i} {
+    @include mb($i);
+  }
+}
+
+@mixin mbm($size) {
+  //margin-bottom: $size + px;
+  @include r($mobile) {
+    margin-bottom: math.div($size, 16) * 1rem;
+  }
+}
+
+@for $i from 1 through 200 {
+  .mbm-#{$i} {
+    @include mbm($i);
+  }
+}
+
+@mixin cover() {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@mixin coverFull() {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

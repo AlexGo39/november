@@ -1,0 +1,30 @@
+.map {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  max-height: 980px;
+  background-color: $c-gray;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #050019 0%, rgba(5, 0, 25, 0) 23.5%);
+    pointer-events: none;
+  }
+}
+
+#map {
+  display: block;
+  flex-shrink: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1417px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}

@@ -1,0 +1,27 @@
+.epigraph {
+  display: flex;
+  width: max-content;
+  margin-bottom: 8px;
+  font-family: $font-accent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  background-image: $c-gradient;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  &--small {
+    font-size: 14px;
+  }
+
+  &--purple {
+    color: $c-purple;
+    background: transparent;
+  }
+
+  &--lavender {
+    color: $c-lavender;
+    background: transparent;
+  }
+}

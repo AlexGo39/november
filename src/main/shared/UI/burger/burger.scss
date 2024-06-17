@@ -1,0 +1,28 @@
+.burger {
+  position: relative;
+  display: flex;
+  width: 16px;
+  height: 14px;
+
+  &__item,
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 8px;
+    height: 2px;
+    background-color: $c-white;
+  }
+
+  &__item {
+    top: 6px;
+    left: 0;
+    width: 16px;
+  }
+
+  &::after {
+    top: 12px;
+  }
+}

@@ -1,0 +1,50 @@
+.section {
+  &--bg {
+    position: relative;
+    @include backdrop();
+  }
+
+  &--video {
+    height: 100vh;
+    max-height: 800px;
+
+    @include r($mobile) {
+      max-height: 920px;
+    }
+  }
+
+  &--light {
+    background-color: $c-light;
+  }
+
+  &--timeline {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      z-index: 1;
+      background-color: $c-light;
+      mix-blend-mode: soft-light;
+      pointer-events: none;
+      opacity: 1;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      z-index: 1;
+      background-image: url("../assets/images/history-pattern.png");
+      background-blend-mode: luminosity;
+      pointer-events: none;
+      opacity: .5;
+    }
+  }
+}

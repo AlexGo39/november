@@ -1,0 +1,16 @@
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 800px;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: 0;
+
+  @include r($mobile) {
+    max-height: 920px;
+  }
+}

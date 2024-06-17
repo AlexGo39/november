@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 375px;
+  font-family: $font-main;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $text-main;
+  background-color: $c-white;
+  overflow-x: hidden;
+}
+
+.main {
+  overflow-x: clip;
+  flex-grow: 1;
+}
+
+.hide,
+.hidden {
+  display: none;
+}
+
+*[disabled] {
+  opacity: .7;
+  pointer-events: none;
+}
+
+.mob-hidden {
+  @include r($mobile) {
+    display: none !important;
+  }
+}
+
+.desktop-hidden {
+  @include rmin($mobile) {
+    display: none !important;
+  }
+}
+
+.mtm-neg-100 {
+  @include r($mobile) {
+    margin-top: -100px;
+  }
+}

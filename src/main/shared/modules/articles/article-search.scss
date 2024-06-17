@@ -1,0 +1,35 @@
+.article-search {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px;
+  background-color: $c-gray;
+  border-radius: $radius20;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__title {
+    transition: .2s linear;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $c-purple-dark;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    transition: .2s linear;
+  }
+
+  &:hover {
+    .article-search__title,
+    .article-search__text {
+      color: $c-purple;
+    }
+  }
+}

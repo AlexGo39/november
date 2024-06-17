@@ -1,0 +1,45 @@
+.facts {
+  position: relative;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 10px;
+  gap: 1px 30px;
+  padding-top: 60px;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+  }
+
+  &__star {
+    position: absolute;
+    display: flex;
+
+    @include r($mobile) {
+      display: none;
+    }
+
+    &--1 {
+      width: 240px;
+      height: 240px;
+      left: 0;
+      bottom: 0;
+    }
+    &--2 {
+      width: 240px;
+      height: 240px;
+      right: 0;
+      top: 0;
+    }
+    &--3 {
+      width: 412px;
+      height: 412px;
+      top: 0;
+      left: -147px;
+      z-index: 0;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.place {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__icon {
+    width: 17px;
+    height: 17px;
+    fill: $c-purple;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 1;
+    color: $c-purple;
+  }
+
+  &--light {
+    span {
+      color: $c-white;
+    }
+
+    .place__icon {
+      fill: $c-white;
+    }
+  }
+
+  &--bold {
+    .place__icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

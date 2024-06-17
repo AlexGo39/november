@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 2;
+
+  @include r($mobile) {
+    padding: 20px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include r($mobile) {
+      justify-content: flex-end;
+      gap: 20px;
+    }
+  }
+
+  &--dark {
+    position: static;
+    .nav__link {
+      color: $c-purple-dark;
+    }
+
+    .icon {
+      fill: $c-purple-dark;
+    }
+
+    .burger__item,
+    .burger::after,
+    .burger::before {
+      background-color: $c-purple-dark;
+    }
+  }
+}

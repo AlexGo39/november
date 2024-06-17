@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Главная</title>
+<link href="css/main.css" rel="stylesheet"></head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <nav class="nav mob-hidden">
+                <a class="nav__link" href="./noyabrsk.html">Ноябрьск 50</a>
+                <a class="nav__link" href="./history">История</a>
+                <a class="nav__link" href="./is-interesting">Это интересно</a>
+                <a class="nav__link" href="./guests">Гостям</a>
+                <a class="nav__link" href="./gallery">Мой ноябрьск</a>
+                <a class="nav__link" href="./partners">Партнёры</a>
+            </nav>
+            <svg class="icon icon--color">
+                <use href="assets/sprite.svg#icon-eye"></use>
+            </svg>
+            <div class="burger desktop-hidden">
+                <span class="burger__item"></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </a>
+            <form class="search-form" action="#">
+                <input type="search" name="s" placeholder="Что мы ищем?">
+                <button class="button button--icon" type="submit">
+                    <svg class="icon">
+                        <use href="assets/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="nav nav--light nav--vertical">
+                <a class="nav__link nav__link--active" href="./noyabrsk-50">Ноябрьск 50</a>
+                <a class="nav__link" href="./history">История</a>
+                <a class="nav__link" href="./is-interesting">Это интересно</a>
+                <a class="nav__link" href="./guests">Гостям</a>
+                <a class="nav__link" href="./gallery">Мой ноябрьск</a>
+                <a class="nav__link" href="./partners">Партнёры</a>
+            </nav>
+            <a class="link" href="tel:+79005003232">
+                <svg class="icon icon--color">
+                    <use href="assets/sprite.svg#phone"></use>
+                </svg>
+                +7-900-500-32-32
+            </a>
+        </div>
+    </div>
+</header>
+
+    <div class="main">
+        <section class="section section--video section--bg">
+    <video class="video" autoplay loop muted poster="./assets/images/intro-preview.jpg">
+        <source src="./assets/images/preview.mp4" type="video/mp4">
+    </video>
+    <div class="container container--intro">
+        <div class="intro">
+            <div class="columns">
+                <div class="columns__col--8 columns__col-mob--12">
+                    <div class="intro__info">
+                        <h1 class="main-title">Ноябрьск - город лучших!</h1>
+                        <p class="intro__subtitle">С юбилеем, Ноябрьск! Лучший город!</p>
+                    </div>
+                    <a href="./noyabrsk.html" class="button button--gradient">
+                        Проект Ноябрьск 50
+                        <svg class="icon icon--color">
+                            <use xlink:href="./assets/sprite.svg#icon-confetti"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="section section--light pt-125 ptm-100 pb-100 pbm-60">
+    <div class="container">
+        <div class="about">
+            <div class="columns">
+                <div class="columns__col--5 columns__col-mob--12">
+                    <div class="about__info">
+                        <div class="head">
+                            <h2 class="title">
+                                Прогулка<br>
+                                по Ноябрьску
+                            </h2>
+                            <p class="text text--accent">
+                                Город Ноябрьск с особым размахом проведёт полюбившиеся многим и известные на весь мир
+                                флагманские мероприятия города, а также новые уникальные события.
+                            </p>
+                        </div>
+                        <div class="about__list">
+                            <article class="article-about">
+                                <picture class="article-about__picture">
+                                    <img src="./assets/images/icon-smile.svg" alt="">
+                                </picture>
+                                <div class="article-about__info">
+                                    <h3 class="article-about__title">Заголовок</h3>
+                                    <p class="article-about__text text text--accent">
+                                        Город Ноябрьск с особым размахом проведёт полюбившиеся многим и известные на весь
+                                        мир/
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="article-about">
+                                <picture class="article-about__picture">
+                                    <img src="./assets/images/icon-heart-like.svg" alt="">
+                                </picture>
+                                <div class="article-about__info">
+                                    <h3 class="article-about__title">Заголовок</h3>
+                                    <p class="article-about__text text text--accent">
+                                        Город Ноябрьск с особым размахом проведёт полюбившиеся многим и известные на весь
+                                        мир/
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <a href="#" class="button button--gradient mob-hidden">
+                            Гостям
+                            <svg class="icon icon--color icon--big">
+                                <use xlink:href="./assets/sprite.svg#icon-family"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns__col--7 columns__col-mob--12 mtm-neg-100 mbm-80">
+                    <picture class="picture picture--map">
+                        <img class="picture__img" src="./assets/images/map-small.svg" alt="">
+                        <img class="picture__airplane" src="./assets/images/icon-airplane.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <a href="#" class="button button--gradient desktop-hidden">
+                Гостям
+                <svg class="icon icon--color icon--big">
+                    <use xlink:href="./assets/sprite.svg#icon-family"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+        <div class="section pt-100 pb-125 pbm-100">
+    <div class="container">
+        <div class="previous">
+            <div class="head mb-46">
+                <h2 class="title">Было - стало</h2>
+                <p class="text text--accent">
+                    Воспользуйтесь уникальной возможностью посмотреть на<br>повседневные места через призму времени!
+                </p>
+            </div>
+            <div class="slider" data-slider="single">
+                <div class="swiper swiper--static">
+                    <div class="swiper-wrapper mbm-20">
+                        <div class="swiper-slide">
+                            <article class="article-compare" data-compare>
+                                <div class="article-compare__wrapper" data-compare-picture>
+                                    <picture class="article-compare__picture">
+                                        <img src="./assets/images/compare-1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="article-compare__dragger" data-compare-dragger>
+                                    <button class="article-compare__button">
+                                        <img src="./assets/images/icon-chevrones.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="article-compare__wrapper" data-compare-picture>
+                                    <picture class="article-compare__picture">
+                                        <img src="./assets/images/compare-2.png" alt="">
+                                    </picture>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide">
+                            <article class="article-compare" data-compare>
+                                <div class="article-compare__wrapper" data-compare-picture>
+                                    <picture class="article-compare__picture">
+                                        <img src="https://images.nvidia.com/aem-dam/Solutions/geforce/ray-tracing/portal-rtx/geforce-ray-tracing-portal-rtx-off-2560.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="article-compare__dragger" data-compare-dragger>
+                                    <button class="article-compare__button">
+                                        <img src="./assets/images/icon-chevrones.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="article-compare__wrapper" data-compare-picture>
+                                    <picture class="article-compare__picture">
+                                        <img src="https://images.nvidia.com/aem-dam/Solutions/geforce/ray-tracing/portal-rtx/geforce-ray-tracing-portal-rtx-on-2560.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-controls">
+                        <button class="swiper-button swiper-button-prev">
+                            <svg class="swiper-button__icon icon">
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-button swiper-button-next">
+                            <svg class="swiper-button__icon icon">
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <section class="section section--light pt-100 ptm-60 pb-155 pbm-60">
+    <div class="container">
+        <div class="events">
+            <div class="columns">
+                <div class="columns__col--6 columns__col-mob--12">
+                    <div class="events__info">
+                        <p class="epigraph">участвуй</p>
+                        <h2 class="main-title main-title--pages main-title--dark mb-24">
+                            ноябрьск 50.<br>
+                            события
+                        </h2>
+                        <p class="text text--accent mb-24 mbm-0">
+                            Город Ноябрьск с особым размахом проведёт полюбившиеся многим<br> и известные на весь мир
+                            флагманские мероприятия города, а также<br> новые уникальные события.
+                        </p>
+                        <a href="./noyabrsk.html" class="button button--gradient mob-hidden">
+                            ко всем событиям
+                            <svg class="icon icon--color">
+                                <use xlink:href="./assets/sprite.svg#icon-arrow-circle"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns__col--6 columns__col-mob--12">
+                    <div class="slider slider--news slider--auto slider--visible mbm-32" data-slider="default" data-slides-view="2">
+                        <div class="swiper swiper--static">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="article-news article-news--with-picture">
+                                        <div class="article-news__head">
+                                            <p class="label">до 10 сентября</p>
+                                        </div>
+                                        <picture class="article-news__picture">
+                                            <img src="./assets/images/winter-forest.png" alt="">
+                                        </picture>
+                                        <div class="article-news__content">
+                                            <p class="epigraph epigraph--small epigraph--purple">концерт</p>
+                                            <h3 class="article-news__title title title--small mb-18">
+                                                фестиваль <br> “День города”
+                                            </h3>
+                                            <p class="article-news__text text">
+                                                На 26 площадках 8 — 10 сентября проведут бесплатные познавательные
+                                                мастер-классы, семейные спортивные состязания, уличные спектакли,
+                                                концерты и шоу-программы. Московские рестораторы предложат изысканную
+                                                гастрономическую программу
+                                                На 26 площадках 8 — 10 сентября проведут бесплатные познавательные
+                                                мастер-классы, семейные спортивные состязания, уличные спектакли,
+                                                концерты и шоу-программы. Московские рестораторы предложат изысканную
+                                                гастрономическую программу
+                                            </p>
+                                        </div>
+                                        <div class="article-news__footer">
+                                            <button class="button button--normal button--purple">
+                                                Подробнее
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="article-news">
+                                        <div class="article-news__head">
+                                            <p class="label">9 сентября, 12:00-21:00</p>
+                                            <p class="label">10 сентября, 12:00-21:00</p>
+                                        </div>
+                                        <div class="article-news__content">
+                                            <p class="epigraph epigraph--small epigraph--purple">фестиваль</p>
+                                            <h3 class="article-news__title title title--small mb-18">
+                                                Благотворительный фестиваль
+                                                «Добрый ноябрьск»
+                                            </h3>
+                                            <p class="article-news__text text">
+                                                40 крупнейших благотворительных фондов и общественных организаций
+                                                собирают на Цветном бульваре неравнодушных москвичей на творческие
+                                                мастер-классы, ярмарки с поделками подопечных фондов.
+                                                Также состоятся праздничные концерты с участием известных артистов. На
+                                                сцене выступят: Бурито, группа «Фабрика», IVAN, Гузель Хасанова, Люся
+                                                Чеботина, 5-sta Family, Артем Кид, Марк Орлов, Никита Киоссе, Маша
+                                                Вебер, группа «ЗИБА», Ирина Ортман, Чина, Виктория Дайнеко, Юлия
+                                                Михальчик, Митя Фомин, Арсений Бородин, Виолетта Чиковани, Биттуев,
+                                                Артем Качер, Наталья Сидорцова, Роман Архипов, Дэя, Раиль Арсланов,
+                                                Кирилл Туриченко, Мари Краймбрери, Амирчик, ANSE, DAASHA, SOYANA.
+                                            </p>
+                                        </div>
+                                        <div class="article-news__footer">
+                                            <div class="place">
+                                                <svg class="place__icon icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-location"></use>
+                                                </svg>
+                                                <span>Цветной бульвар</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="article-news article-news--with-picture">
+                                        <div class="article-news__head">
+                                            <p class="label">до 10 сентября</p>
+                                        </div>
+                                        <picture class="article-news__picture">
+                                            <img src="./assets/images/winter-forest.png" alt="">
+                                        </picture>
+                                        <div class="article-news__content">
+                                            <p class="epigraph epigraph--small epigraph--purple">концерт</p>
+                                            <h3 class="article-news__title title title--small mb-18">
+                                                фестиваль <br> “День города”
+                                            </h3>
+                                            <p class="article-news__text text">
+                                                На 26 площадках 8 — 10 сентября проведут бесплатные познавательные
+                                                мастер-классы, семейные спортивные состязания, уличные спектакли,
+                                                концерты и шоу-программы. Московские рестораторы предложат изысканную
+                                                гастрономическую программу
+                                                На 26 площадках 8 — 10 сентября проведут бесплатные познавательные
+                                                мастер-классы, семейные спортивные состязания, уличные спектакли,
+                                                концерты и шоу-программы. Московские рестораторы предложат изысканную
+                                                гастрономическую программу
+                                            </p>
+                                        </div>
+                                        <div class="article-news__footer">
+                                            <button class="button button--normal button--purple">
+                                                Подробнее
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="article-news">
+                                        <div class="article-news__head">
+                                            <p class="label">9 сентября, 12:00-21:00</p>
+                                            <p class="label">10 сентября, 12:00-21:00</p>
+                                        </div>
+                                        <div class="article-news__content">
+                                            <p class="epigraph epigraph--small epigraph--purple">фестиваль</p>
+                                            <h3 class="article-news__title title title--small mb-18">
+                                                Благотворительный фестиваль
+                                                «Добрый ноябрьск»
+                                            </h3>
+                                            <p class="article-news__text text">
+                                                40 крупнейших благотворительных фондов и общественных организаций
+                                                собирают на Цветном бульваре неравнодушных москвичей на творческие
+                                                мастер-классы, ярмарки с поделками подопечных фондов.
+                                                Также состоятся праздничные концерты с участием известных артистов. На
+                                                сцене выступят: Бурито, группа «Фабрика», IVAN, Гузель Хасанова, Люся
+                                                Чеботина, 5-sta Family, Артем Кид, Марк Орлов, Никита Киоссе, Маша
+                                                Вебер, группа «ЗИБА», Ирина Ортман, Чина, Виктория Дайнеко, Юлия
+                                                Михальчик, Митя Фомин, Арсений Бородин, Виолетта Чиковани, Биттуев,
+                                                Артем Качер, Наталья Сидорцова, Роман Архипов, Дэя, Раиль Арсланов,
+                                                Кирилл Туриченко, Мари Краймбрери, Амирчик, ANSE, DAASHA, SOYANA.
+                                            </p>
+                                        </div>
+                                        <div class="article-news__footer">
+                                            <div class="place">
+                                                <svg class="place__icon icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-location"></use>
+                                                </svg>
+                                                <span>Цветной бульвар</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="article-news article-news--with-picture">
+                                        <div class="article-news__head">
+                                            <p class="label">до 10 сентября</p>
+                                        </div>
+                                        <picture class="article-news__picture">
+                                            <img src="./assets/images/winter-forest.png" alt="">
+                                        </picture>
+                                        <div class="article-news__content">
+                                            <p class="epigraph epigraph--small epigraph--purple">концерт</p>
+                                            <h3 class="article-news__title title title--small mb-18">
+                                                фестиваль <br> “День города”
+                                            </h3>
+                                            <p class="article-news__text text">
+                                                На 26 площадках 8 — 10 сентября проведут бесплатные познавательные
+                                                мастер-классы, семейные спортивные состязания, уличные спектакли,
+                                                концерты и шоу-программы. Московские рестораторы предложат изысканную
+                                                гастрономическую программу
+                                                На 26 площадках 8 — 10 сентября проведут бесплатные познавательные
+                                                мастер-классы, семейные спортивные состязания, уличные спектакли,
+                                                концерты и шоу-программы. Московские рестораторы предложат изысканную
+                                                гастрономическую программу
+                                            </p>
+                                        </div>
+                                        <div class="article-news__footer">
+                                            <button class="button button--normal button--purple">
+                                                Подробнее
+                                            </button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="article-news">
+                                        <div class="article-news__head">
+                                            <p class="label">9 сентября, 12:00-21:00</p>
+                                            <p class="label">10 сентября, 12:00-21:00</p>
+                                        </div>
+                                        <div class="article-news__content">
+                                            <p class="epigraph epigraph--small epigraph--purple">фестиваль</p>
+                                            <h3 class="article-news__title title title--small mb-18">
+                                                Благотворительный фестиваль
+                                                «Добрый ноябрьск»
+                                            </h3>
+                                            <p class="article-news__text text">
+                                                40 крупнейших благотворительных фондов и общественных организаций
+                                                собирают на Цветном бульваре неравнодушных москвичей на творческие
+                                                мастер-классы, ярмарки с поделками подопечных фондов.
+                                                Также состоятся праздничные концерты с участием известных артистов. На
+                                                сцене выступят: Бурито, группа «Фабрика», IVAN, Гузель Хасанова, Люся
+                                                Чеботина, 5-sta Family, Артем Кид, Марк Орлов, Никита Киоссе, Маша
+                                                Вебер, группа «ЗИБА», Ирина Ортман, Чина, Виктория Дайнеко, Юлия
+                                                Михальчик, Митя Фомин, Арсений Бородин, Виолетта Чиковани, Биттуев,
+                                                Артем Качер, Наталья Сидорцова, Роман Архипов, Дэя, Раиль Арсланов,
+                                                Кирилл Туриченко, Мари Краймбрери, Амирчик, ANSE, DAASHA, SOYANA.
+                                            </p>
+                                        </div>
+                                        <div class="article-news__footer">
+                                            <div class="place">
+                                                <svg class="place__icon icon">
+                                                    <use xlink:href="./assets/sprite.svg#icon-location"></use>
+                                                </svg>
+                                                <span>Цветной бульвар</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-controls swiper-controls--bottom mob-hidden">
+                                <button class="swiper-button swiper-button-prev">
+                                    <svg class="swiper-button__icon icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                                <button class="swiper-button swiper-button-next">
+                                    <svg class="swiper-button__icon icon">
+                                        <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./noyabrsk.html" class="button button--gradient button--wide desktop-hidden">
+                        ко всем событиям
+                        <svg class="icon icon--color">
+                            <use xlink:href="./assets/sprite.svg#icon-arrow-circle"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <nav class="footer__nav nav">
+                <a class="nav__link" href="./noyabrsk-50">Ноябрьск 50</a>
+                <a class="nav__link" href="./history">История</a>
+                <a class="nav__link" href="./is-interesting">Это интересно</a>
+                <a class="nav__link" href="./guests">Гостям</a>
+                <a class="nav__link" href="./gallery">Мой ноябрьск</a>
+                <a class="nav__link" href="./partners">Партнёры</a>
+            </nav>
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="tel:+79005003232" class="footer__link">
+                        <svg class="icon">
+                            <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+                        </svg>
+                        <span>+7-900-500-32-32</span>
+                    </a>
+                    <a href="mailto:email@mail.ru" class="footer__link">
+                        <svg class="icon">
+                            <use xlink:href="./assets/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <span>email@mail.ru</span>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <svg class="icon">
+                            <use xlink:href="./assets/sprite.svg#icon-pin"></use>
+                        </svg>
+                        <span>Адрес</span>
+                    </a>
+                </div>
+                <form class="search-form" action="#">
+                    <input type="search" name="s" placeholder="Поиск по сайту...">
+                    <button type="submit">
+                        <svg class="search-form__icon icon icon--color">
+                            <use href="assets/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__text footer__text--copyright">© Ноябрьск 50, 2024</p>
+                <a href="#" class="footer__text footer__text--link">Политика конфиденциальности</a>
+                <div class="developer">
+                    <span>Разработано</span>
+                    <img src="./assets/images/logo-osmisle.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Временная секция -->
+    <style>
+    .temp-nav {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<section class="section">
+    <div class="container">
+        <nav class="temp-nav">
+            <a href="./index.html" class="temp__link">Главная</a>
+            <a href="./noyabrsk.html" class="temp__link">Ноябрьск 50</a>
+            <a href="./history.html" class="temp__link">История</a>
+            <a href="./gallery.html" class="temp__link">Галерея</a>
+            <a href="./galleryDetail.html" class="temp__link">Галерея деталка</a>
+            <a href="./partners.html" class="temp__link">Партнеры</a>
+            <a href="./search.html" class="temp__link">Поиск</a>
+            <a href="./facts.html" class="temp__link">Это интересно</a>
+            <a href="./guests.html" class="temp__link">Гостям</a>
+        </nav>
+    </div>
+</section>
+<script defer src="bundle.js"></script></body>
+</html>

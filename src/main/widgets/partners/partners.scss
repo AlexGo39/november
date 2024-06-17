@@ -1,0 +1,11 @@
+.partners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 30px;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+.developer {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  @include r($mobile) {
+    margin-top: 18px;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 20.64px;
+    color: $c-white;
+  }
+}

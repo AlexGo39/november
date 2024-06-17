@@ -1,0 +1,150 @@
+.slider {
+  position: relative;
+
+  &--news {
+    .swiper {
+      min-width: 930px;
+
+      @include r($mobile) {
+        min-width: auto;
+      }
+    }
+  }
+
+  &--visible {
+    .swiper {
+      overflow: visible;
+      padding-bottom: 0;
+    }
+  }
+
+  &--auto {
+    .swiper {
+      @include r($mobile) {
+        overflow: visible;
+      }
+    }
+    .swiper-slide {
+      height: auto;
+      @include r($mobile) {
+        flex-shrink: 1;
+      }
+    }
+  }
+
+  &--coverflow {
+    .swiper-slide {
+      opacity: 0.2;
+      transition: .2s linear;
+      &-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--head {
+    .swiper-controls {
+      gap: 24px;
+      position: static;
+      transform: none;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 34px;
+  }
+
+  &--thumbs {
+    width: 50%;
+    flex-shrink: 1;
+
+    @include r($mobile) {
+      width: 100%;
+    }
+
+    .swiper {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.swiper {
+  padding-bottom: 50px;
+  &--static {
+    position: static;
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    padding: 10px;
+    border-radius: $radius50;
+    background-color: $c-purple;
+    cursor: pointer;
+    transition: .2s linear;
+    pointer-events: auto;
+
+    &-next {
+
+    }
+
+    &-prev {
+      transform: rotate(180deg);
+    }
+
+    &-disabled {
+      width: 38px;
+      height: 38px;
+      background-color: $c-white;
+      opacity: 1;
+
+      .swiper-button__icon {
+        fill: $c-purple
+      }
+    }
+
+    &-lock {
+      display: none;
+    }
+
+    &__icon {
+      fill: $c-white;
+    }
+  }
+
+  &-controls {
+    position: absolute;
+    top: 50%;
+    left: -71px;
+    right: -71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    @include r($mobile) {
+      position: static;
+      top: initial;
+      right: initial;
+      width: 100%;
+      transform: none;
+    }
+
+    &--bottom {
+      left: initial;
+      top: initial;
+      bottom: -75px;
+      right: 0;
+      gap: 24px;
+      transform: none;
+    }
+  }
+}

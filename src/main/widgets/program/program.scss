@@ -1,0 +1,49 @@
+.program {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #DEE4F0;
+  border-radius: $radius20;
+
+  @include r($mobile) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0 20px 58px;
+    width: 100%;
+    max-width: 590px;
+
+    @include r($mobile) {
+      padding: 30px 35px 0;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    width: 77px;
+    height: 33px;
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: $c-blue;
+
+    @include r($mobile) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &__picture {
+
+  }
+}

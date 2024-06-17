@@ -1,0 +1,80 @@
+.article-compare {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 550px;
+  border-radius: $radius20;
+  overflow: hidden;
+
+  @include r($mobile) {
+    height: 310px;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    &:last-of-type {
+      z-index: 0;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1410px;
+    height: 550px;
+    pointer-events: none;
+    z-index: 1;
+
+    @include r($mobile) {
+      width: 700px;
+      height: 310px;
+    }
+
+    img {
+      @include coverFull()
+    }
+  }
+
+  &__dragger {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 4px;
+    height: 100%;
+    background-color: $c-white;
+    z-index: 1;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: $c-purple-dark;
+    border-radius: $radius50;
+    z-index: 2;
+    cursor: pointer;
+
+    img {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+    }
+  }
+}

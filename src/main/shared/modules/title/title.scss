@@ -1,0 +1,37 @@
+.title {
+  font-family: $font-accent;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  color: $c-purple-dark;
+
+  @include r($mobile) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &--medium {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  &--small {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+
+    @include r($mobile) {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &--extra-small {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  &--purple {
+    color: $c-purple;
+  }
+}

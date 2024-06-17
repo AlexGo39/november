@@ -1,0 +1,17 @@
+.icon {
+  width: 24px;
+  height: 24px;
+
+  &--color {
+    fill: $c-white;
+  }
+
+  &--dark {
+    fill: $c-purple-dark;
+  }
+
+  &--big {
+    width: 35px;
+    height: 35px;
+  }
+}

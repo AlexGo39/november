@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+
+  &__link {
+    margin: auto 0;
+    font-size: $text-main;
+    line-height: 24px;
+    color: $c-white;
+    text-transform: uppercase;
+
+    &--active {
+      font-weight: 700;
+      pointer-events: none
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+    gap: 0
+  }
+
+  &--light {
+    &__link {
+      color: $c-white;
+
+      &--active {
+        font-weight: 700;
+        pointer-events: none
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 30px;
+  width: max-content;
+  min-height: 50px;
+
+  font-size: $text-accent;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: $c-white;
+
+  border-radius: $radius30;
+  cursor: pointer;
+
+  &--gradient {
+    background: $c-gradient;
+  }
+
+  &--wide {
+    width: 100%;
+
+    &-mobile {
+      @include r($mobile) {
+        width: 100%;
+      }
+    }
+  }
+
+  &--normal {
+    padding: 8px 21px;
+    min-height: auto;
+    font-size: $text-main;
+    line-height: 24px;
+  }
+  
+  &--purple {
+    color: $c-purple;
+    background-color: rgba($c-purple, 0.1);
+  }
+}
