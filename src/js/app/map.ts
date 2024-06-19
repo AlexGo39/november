@@ -24,7 +24,6 @@ class CustomMap {
     layer: Layer;
     scale;
     mapParams: ImageParams;
-    pinParams: ImageParams;
 
     constructor(el: HTMLCanvasElement) {
         this.canvas = el;

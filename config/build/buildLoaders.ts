@@ -1,6 +1,7 @@
 import webpack from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {BuildOptions} from "./types/config";
+import path from "path";
 
 export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     const typeScriptLoader = {
@@ -36,9 +37,8 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
             "sass-loader",
         ],
     }
-    
     const svgLoader = {
-        test: /\.svg$/,
+        test: /.svg/,
         loader: 'svg-sprite-loader',
         options: {
             extract: true,

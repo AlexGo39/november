@@ -12,9 +12,11 @@
   }
 
   &__wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
     @include r($mobile) {
       justify-content: flex-end;
       gap: 20px;
