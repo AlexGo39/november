@@ -3,9 +3,9 @@ import {Layer} from "konva/lib/Layer";
 import {Stage} from "konva/lib/Stage";
 import {mapData} from "../mapData/mapData";
 
-// @ts-ignore
-import mapImage from "../../main/shared/images/map.svg"
 import {Fancybox} from "@fancyapps/ui";
+
+const mapImage = "assets/images/map.svg";
 
 interface ImageParams {
     x: number,
@@ -23,6 +23,7 @@ class CustomMap {
     canvasHeight;
     layer: Layer;
     scale;
+    iconScale;
     mapParams: ImageParams;
 
     constructor(el: HTMLCanvasElement) {
@@ -30,6 +31,7 @@ class CustomMap {
         this.canvasWidth = 1920;
         this.canvasHeight = 1417;
         this.scale = 1.3;
+        this.iconScale = 1.65;
         this.mapParams = {
             x: -10,
             y: -10,
@@ -116,9 +118,10 @@ class CustomMap {
             image.setAttrs({
                 x: pin.x,
                 y: pin.y,
-                width: pin.width * 1.65 + 15,
-                height: pin.height * 1.65,
+                width: pin.width * this.iconScale,
+                height: pin.height * this.iconScale,
             })
+
             image.addEventListener('click', () => {
                 Fancybox.show([{src: pin.src, type: "inline"}])
             })

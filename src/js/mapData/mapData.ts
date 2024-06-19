@@ -1,25 +1,14 @@
-// @ts-ignore
-import house from "../../main/shared/images/mapPins/icon-house.svg"
-// @ts-ignore
-import bank from "../../main/shared/images/mapPins/icon-bank.svg"
-// @ts-ignore
-import bench from "../../main/shared/images/mapPins/icon-bench.svg"
-// @ts-ignore
-import building from "../../main/shared/images/mapPins/icon-building.svg"
-// @ts-ignore
-import church from "../../main/shared/images/mapPins/icon-church.svg"
-// @ts-ignore
-import church2 from "../../main/shared/images/mapPins/icon-church2.svg"
-// @ts-ignore
-import monument from "../../main/shared/images/mapPins/icon-monument.svg"
-// @ts-ignore
-import museum from "../../main/shared/images/mapPins/icon-museum.svg"
-// @ts-ignore
-import statue from "../../main/shared/images/mapPins/icon-statue.svg"
-// @ts-ignore
-import tree from "../../main/shared/images/mapPins/icon-tree.svg"
-// @ts-ignore
-import camera from "../../main/shared/images/mapPins/icon-camera.svg"
+const house = "assets/images/mapPins/icon-house.svg"
+const bank = "assets/images/mapPins/icon-bank.svg"
+const bench = "assets/images/mapPins/icon-bench.svg"
+const building = "assets/images/mapPins/icon-building.svg"
+const church = "assets/images/mapPins/icon-church.svg"
+const church2 = "assets/images/mapPins/icon-church2.svg"
+const monument = "assets/images/mapPins/icon-monument.svg"
+const museum = "assets/images/mapPins/icon-museum.svg"
+const statue = "assets/images/mapPins/icon-statue.svg"
+const tree = "assets/images/mapPins/icon-tree.svg"
+const camera = "assets/images/mapPins/icon-camera.svg"
 
 export const mapData = {
     0: {
