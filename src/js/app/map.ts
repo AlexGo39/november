@@ -29,12 +29,12 @@ class CustomMap {
     constructor(el: HTMLCanvasElement) {
         this.canvas = el;
         this.canvasWidth = 1920;
-        this.canvasHeight = 1417;
-        this.scale = 1.3;
-        this.iconScale = 1.65;
+        this.canvasHeight = 1080;
+        this.scale = 1;
+        this.iconScale = 1;
         this.mapParams = {
-            x: -10,
-            y: -10,
+            x: 0,
+            y: 0,
             width: this.canvasWidth * this.scale,
             height: this.canvasHeight * this.scale,
             image: mapImage
