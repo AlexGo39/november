@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import {EffectCoverflow, Navigation, Thumbs} from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination, Thumbs } from "swiper/modules";
 
 class Slider {
     slider;
@@ -19,18 +19,21 @@ class Slider {
 
     init = () => {
         switch (this.type) {
-            case 'default':
-                this.initDefaultSlider()
-                break;
-            case 'single':
-                this.initSingleSlider()
-                break;
-            case 'coverflow':
-                this.initCoverflowSlider()
-                break;
-            case 'thumbs':
-                this.initThumbsSlider()
-                break;
+        case 'default':
+            this.initDefaultSlider()
+            break;
+        case 'single':
+            this.initSingleSlider()
+            break;
+        case 'coverflow':
+            this.initCoverflowSlider()
+            break;
+        case 'thumbs':
+            this.initThumbsSlider()
+            break;
+        case 'preview':
+            this.initPreviewSlider()
+            break;
         }
     }
 
@@ -122,6 +125,21 @@ class Slider {
             spaceBetween: 20,
             thumbs: {
                 swiper: thumb
+            }
+        })
+    }
+
+    initPreviewSlider = () => {
+        const swiper = this.slider.querySelector('.swiper');
+        new Swiper(swiper, {
+            modules: [Navigation, Pagination],
+            slidesPerView: this.slidesView ? this.slidesView : 1,
+            spaceBetween: 30,
+            allowTouchMove: false,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.swiper-pagination', // Класс элемента пагинации
+                clickable: true, // Делает точки пагинации кликабельными
             }
         })
     }

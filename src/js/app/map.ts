@@ -1,9 +1,9 @@
 import Konva from "konva";
-import {Layer} from "konva/lib/Layer";
-import {Stage} from "konva/lib/Stage";
-import {mapData} from "../mapData/mapData";
+import { Layer } from "konva/lib/Layer";
+import { Stage } from "konva/lib/Stage";
+import { mapData } from "../mapData/mapData";
 
-import {Fancybox} from "@fancyapps/ui";
+import { Fancybox } from "@fancyapps/ui";
 
 const mapImage = "assets/images/map.svg";
 
@@ -14,6 +14,7 @@ interface ImageParams {
     width: number,
     height: number,
     src?: string,
+    previewSrc?: string
 }
 
 class CustomMap {
@@ -112,35 +113,112 @@ class CustomMap {
         })
     }
 
-    // Рендер пина на карту
     createObject = (pin: ImageParams): void => {
+        let timeoutId: number | null = null;
+
         Konva.Image.fromURL(pin.image, (image) => {
             image.setAttrs({
                 x: pin.x,
                 y: pin.y,
                 width: pin.width * this.iconScale,
                 height: pin.height * this.iconScale,
-            })
+            });
+
+            const showPreview = () => {
+                const previewElement = document.getElementById(pin.previewSrc);
+                if (previewElement) {
+                    if (timeoutId) {
+                        clearTimeout(timeoutId);
+                        timeoutId = null;
+                    }
+
+                    previewElement.style.visibility = 'visible';
+                    previewElement.style.opacity = '1';
+                    previewElement.style.zIndex = '999';
+
+                    const previewWidth = previewElement.offsetWidth;
+                    const previewHeight = previewElement.offsetHeight;
+                    const windowWidth = window.innerWidth;
+                    const windowHeight = window.innerHeight;
+
+                    let left, top;
+
+                    // Adjust vertical axis (40% from the bottom)
+                    const verticalAxis = windowHeight * 0.6;
+
+                    // Determine left/right positioning
+                    if (pin.x + previewWidth > windowWidth) {
+                        left = pin.x - previewWidth - 6;
+                    } else {
+                        left = pin.x + 6;
+                    }
+
+                    // Determine top/bottom positioning based on the adjusted axis
+                    if (pin.y > verticalAxis) {
+                        top = pin.y - previewHeight - 20;
+                    } else {
+                        top = pin.y + 20;
+                    }
+
+                    previewElement.style.position = 'absolute';
+                    previewElement.style.left = `${left}px`;
+                    previewElement.style.top = `${top}px`;
+                }
+            };
+
+            const hidePreview = () => {
+                const previewElement = document.getElementById(pin.previewSrc);
+                if (previewElement) {
+                    timeoutId = window.setTimeout(() => {
+                        previewElement.style.opacity = '0';
+                        previewElement.style.zIndex = '-1';
+                    }, 300);
+                }
+            };
 
             image.addEventListener('click', () => {
-                Fancybox.show([{src: pin.src, type: "inline"}])
-            })
+                Fancybox.show([{ src: pin.src, type: "inline" }]);
+            });
 
             image.addEventListener('touchstart', () => {
-                Fancybox.show([{src: pin.src, type: "inline"}])
-            })
+                Fancybox.show([{ src: pin.src, type: "inline" }]);
+            });
 
-            image.addEventListener('mouseenter', () => {
+            image.on('mouseenter', () => {
                 document.body.style.cursor = 'pointer';
-            })
+                showPreview();
+            });
 
-            image.addEventListener('mouseleave', () => {
+            image.on('mouseleave', () => {
                 document.body.style.cursor = 'auto';
-            })
+                hidePreview();
+            });
 
             this.layer.add(image);
+
+            const previewElement = document.getElementById(pin.previewSrc);
+            if (previewElement) {
+                previewElement.addEventListener('mouseenter', () => {
+                    if (timeoutId) {
+                        clearTimeout(timeoutId);
+                        timeoutId = null;
+                    }
+                    previewElement.style.opacity = '1';
+                    previewElement.style.zIndex = '999';
+                });
+
+                previewElement.addEventListener('mouseleave', hidePreview);
+            }
         });
-    }
+    };
+
+
+
+
+
+
+
+
 }
 
 export default CustomMap

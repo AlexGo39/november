@@ -19,7 +19,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-1'
+        src: 'map-detail-1',
+        previewSrc: 'map-preview-1'
     },
     1: {
         x: 1168,
@@ -27,7 +28,8 @@ export const mapData = {
         image: bank,
         width: 25,
         height: 25,
-        src: 'map-detail-2'
+        src: 'map-detail-2',
+        previewSrc: 'map-preview-2'
     },
     2: {
         x: 1000,
@@ -35,7 +37,8 @@ export const mapData = {
         image: bench,
         width: 25,
         height: 25,
-        src: 'map-detail-3'
+        src: 'map-detail-3',
+        previewSrc: 'map-preview-3'
     },
     3: {
         x: 1049,
@@ -43,7 +46,8 @@ export const mapData = {
         image: building,
         width: 25,
         height: 25,
-        src: 'map-detail-4'
+        src: 'map-detail-4',
+        previewSrc: 'map-preview-4'
     },
     4: {
         x: 948,
@@ -51,7 +55,8 @@ export const mapData = {
         image: church,
         width: 25,
         height: 25,
-        src: 'map-detail-5'
+        src: 'map-detail-5',
+        previewSrc: 'map-preview-5'
     },
     5: {
         x: 1176,
@@ -59,7 +64,8 @@ export const mapData = {
         image: church2,
         width: 25,
         height: 25,
-        src: 'map-detail-6'
+        src: 'map-detail-6',
+        previewSrc: 'map-preview-6'
     },
     6: {
         x: 982,
@@ -67,7 +73,8 @@ export const mapData = {
         image: monument,
         width: 25,
         height: 25,
-        src: 'map-detail-7'
+        src: 'map-detail-7',
+        previewSrc: 'map-preview-7'
     },
     7: {
         x: 1074,
@@ -75,7 +82,8 @@ export const mapData = {
         image: museum,
         width: 25,
         height: 25,
-        src: 'map-detail-8'
+        src: 'map-detail-8',
+        previewSrc: 'map-preview-8'
     },
     8: {
         x: 917,
@@ -83,7 +91,8 @@ export const mapData = {
         image: statue,
         width: 25,
         height: 25,
-        src: 'map-detail-9'
+        src: 'map-detail-9',
+        previewSrc: 'map-preview-9'
     },
     9: {
         x: 1091,
@@ -91,7 +100,8 @@ export const mapData = {
         image: tree,
         width: 25,
         height: 25,
-        src: 'map-detail-10'
+        src: 'map-detail-10',
+        previewSrc: 'map-preview-10'
     },
     10: {
         x: 1086,
@@ -99,7 +109,8 @@ export const mapData = {
         image: camera,
         width: 25,
         height: 25,
-        src: 'map-detail-11'
+        src: 'map-detail-11',
+        previewSrc: 'map-preview-11'
     },
     11: {
         x: 1064,
@@ -107,7 +118,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-12'
+        src: 'map-detail-12',
+        previewSrc: 'map-preview-12'
     },
     12: {
         x: 1263,
@@ -115,7 +127,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-13'
+        src: 'map-detail-13',
+        previewSrc: 'map-preview-13'
     },
     13: {
         x: 910,
@@ -123,7 +136,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-14'
+        src: 'map-detail-14',
+        previewSrc: 'map-preview-14'
     },
     14: {
         x: 883,
@@ -131,7 +145,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-15'
+        src: 'map-detail-15',
+        previewSrc: 'map-preview-15'
     },
     15: {
         x: 1027,
@@ -139,7 +154,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-16'
+        src: 'map-detail-16',
+        previewSrc: 'map-preview-16'
     },
     16: {
         x: 882,
@@ -147,7 +163,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-17'
+        src: 'map-detail-17',
+        previewSrc: 'map-preview-17'
     },
     17: {
         x: 1154,
@@ -155,7 +172,8 @@ export const mapData = {
         image: museum,
         width: 25,
         height: 25,
-        src: 'map-detail-18'
+        src: 'map-detail-18',
+        previewSrc: 'map-preview-18'
     },
     18: {
         x: 918,
@@ -163,7 +181,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-19'
+        src: 'map-detail-19',
+        previewSrc: 'map-preview-19'
     },
     19: {
         x: 762,
@@ -171,7 +190,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-20'
+        src: 'map-detail-20',
+        previewSrc: 'map-preview-20'
     },
     20: {
         x: 970,
@@ -179,7 +199,8 @@ export const mapData = {
         image: statue,
         width: 25,
         height: 25,
-        src: 'map-detail-21'
+        src: 'map-detail-21',
+        previewSrc: 'map-preview-21'
     },
     21: {
         x: 876,
@@ -187,7 +208,8 @@ export const mapData = {
         image: house,
         width: 25,
         height: 25,
-        src: 'map-detail-22'
+        src: 'map-detail-22',
+        previewSrc: 'map-preview-22'
     },
     22: {
         x: 1044,
@@ -195,7 +217,8 @@ export const mapData = {
         image: bank,
         width: 25,
         height: 25,
-        src: 'map-detail-23'
+        src: 'map-detail-23',
+        previewSrc: 'map-preview-23'
     },
     23: {
         x: 1262,
@@ -203,7 +226,8 @@ export const mapData = {
         image: statue,
         width: 25,
         height: 25,
-        src: 'map-detail-24'
+        src: 'map-detail-24',
+        previewSrc: 'map-preview-24'
     },
     24: {
         x: 540,
@@ -211,7 +235,8 @@ export const mapData = {
         image: statue,
         width: 25,
         height: 25,
-        src: 'map-detail-25'
+        src: 'map-detail-25',
+        previewSrc: 'map-preview-25'
     },
     25: {
         x: 786,
@@ -219,7 +244,8 @@ export const mapData = {
         image: statue,
         width: 25,
         height: 25,
-        src: 'map-detail-26'
+        src: 'map-detail-26',
+        previewSrc: 'map-preview-26'
     },
     26: {
         x: 882,
@@ -227,7 +253,8 @@ export const mapData = {
         image: statue,
         width: 25,
         height: 25,
-        src: 'map-detail-27'
+        src: 'map-detail-27',
+        previewSrc: 'map-preview-27'
     },
     27: {
         x: 624,
@@ -235,7 +262,8 @@ export const mapData = {
         image: bench,
         width: 25,
         height: 25,
-        src: 'map-detail-28'
+        src: 'map-detail-28',
+        previewSrc: 'map-preview-28'
     },
     28: {
         x: 832,
@@ -243,7 +271,8 @@ export const mapData = {
         image: bench,
         width: 25,
         height: 25,
-        src: 'map-detail-29'
+        src: 'map-detail-29',
+        previewSrc: 'map-preview-29'
     },
     29: {
         x: 925,
@@ -251,7 +280,8 @@ export const mapData = {
         image: bench,
         width: 25,
         height: 25,
-        src: 'map-detail-30'
+        src: 'map-detail-30',
+        previewSrc: 'map-preview-30'
     },
     30: {
         x: 1093,
@@ -259,7 +289,8 @@ export const mapData = {
         image: bench,
         width: 25,
         height: 25,
-        src: 'map-detail-31'
+        src: 'map-detail-31',
+        previewSrc: 'map-preview-31'
     },
     31: {
         x: 1059,
@@ -267,7 +298,8 @@ export const mapData = {
         image: museum,
         width: 25,
         height: 25,
-        src: 'map-detail-32'
+        src: 'map-detail-32',
+        previewSrc: 'map-preview-32'
     },
     32: {
         x: 1080,
@@ -275,7 +307,8 @@ export const mapData = {
         image: museum,
         width: 25,
         height: 25,
-        src: 'map-detail-33'
+        src: 'map-detail-33',
+        previewSrc: 'map-preview-33'
     },
     33: {
         x: 999,
@@ -283,7 +316,8 @@ export const mapData = {
         image: museum,
         width: 25,
         height: 25,
-        src: 'map-detail-34'
+        src: 'map-detail-34',
+        previewSrc: 'map-preview-34'
     },
     34: {
         x: 925,
@@ -291,7 +325,8 @@ export const mapData = {
         image: monument,
         width: 25,
         height: 25,
-        src: 'map-detail-35'
+        src: 'map-detail-35',
+        previewSrc: 'map-preview-35'
     },
     35: {
         x: 1507,
@@ -299,7 +334,8 @@ export const mapData = {
         image: closestRight,
         width: 112,
         height: 34,
-        src: 'map-detail-36'
+        src: 'map-detail-36',
+        previewSrc: 'map-preview-36'
     },
     36: {
         x: 243,
@@ -307,7 +343,8 @@ export const mapData = {
         image: closestLeft,
         width: 112,
         height: 34,
-        src: 'map-detail-37'
+        src: 'map-detail-37',
+        previewSrc: 'map-preview-37'
     },
     37: {
         x: 243,
@@ -315,6 +352,7 @@ export const mapData = {
         image: closestLeft,
         width: 112,
         height: 34,
-        src: 'map-detail-38'
-    },
-}
+        src: 'map-detail-38',
+        previewSrc: 'map-preview-38'
+    }
+};
